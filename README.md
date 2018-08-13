@@ -1,4 +1,4 @@
-## Lipex
+## Programa Relacionamento RED by Dufry
 
 ---
 
