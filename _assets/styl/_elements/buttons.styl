@@ -1,0 +1,63 @@
+.image-link img {
+    margin: 0;
+    display: block;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 1em 1.5em .8em;
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-indent: .2em;
+    &-wired-white {
+        border: 1px solid white;
+        color: white;
+        background-color: transparent;
+        &:hover {
+            background-color: alpha(white, .2);
+        }
+    }
+    &-wired-red {
+        border: 1px solid red;
+        color: red;
+        background-color: transparent;
+        &:hover {
+            background-color: alpha(red, .9);
+            color: white;
+        }
+    }
+
+    &-saiba-mais {
+        text-align: center;
+        position: relative;
+        display: block;
+        padding-right: 40px;
+
+        border: 1px solid red;
+        color: red;
+        background-color: transparent;
+        &:hover {
+            background-color: alpha(red, .9);
+            color: white;
+        }
+
+        &:after { 
+            content: '+'; 
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 26px;
+            font-family: arial;
+        }
+    }
+}

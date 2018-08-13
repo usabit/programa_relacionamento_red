@@ -1,0 +1,115 @@
+---
+layout: default
+---
+
+<div class="wrapper">
+    <div class="main-banner" style="background-image: url('{{site.baseurl}}/assets/img/banner-principal.jpg')">
+        <div class="content">
+            <h2>
+                <strong>Conheça o <br> Red</strong> 
+                <span class="light">by Dufry</span>
+            </h2>
+            <p class="line-height-18 mt-20">O programa de Relacionamento Global da Dufry, que oferece aos seus membros benefícios exclusivos dentro de suas lojas e fora
+            com parceiros por todo o mundo.</p>
+            <div class="main-banner-actions my-40">
+                <a href="#" class="btn btn-wired-white">Baixe o App</a>
+                <span class="mx-16 mt-4 letter-spacing-20">OU</span>
+                <a href="#" class="btn btn-wired-white">cadastre-se Aqui</a>
+            </div>
+            <div>
+                <a href="#" class="image-link mr-16">
+                    <img src="{{site.baseurl}}/assets/img/disponivel-na-appstore.png" alt="">
+                </a>
+                <a href="#" class="image-link">
+                    <img src="{{site.baseurl}}/assets/img/disponivel-no-googleplay.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="wrapper my-45 site-nav-sticky">
+    <ul class="site-nav py-10">
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Benefícios</a></li>
+        <li><a href="#">Mastercard</a></li>
+        <li><a href="#">Novidades do Mês</a></li>
+        <li><a href="#">Perguntas Frequentes</a></li>
+    </ul>
+</div>
+
+<div class="wrapper">
+    <img src="{{site.baseurl}}/assets/img/BannerComoFunciona.jpg" class="responsive-image" alt="">
+</div>
+
+<div class="wrapper">
+    <h2 class="section-title mt-55 mb-45">Categorias</h2>
+
+    <ul class="categories-boxes">
+        <li class="category-box">
+            <div class="content p-20">
+                <h4 class="category-box-title mt-25">
+                    <span class="light">MEMBRO</span>
+                    <span class="bold">SILVER</span>
+                </h4>
+                <p class="category-entry-requirement uppercase letter-spacing-20 mt-20"> Cadastro Gratuito </p>
+                <p class="category-description mt-25 text-center line-height-15 letter-spacing-6 flex-grow">Cadastre-se gratuitamente e aproveite uma seleção completa de benefícios exclusivos</p>
+                <a href="#" class="btn btn-wired-red mt-30">Cadastre-se</a>
+                <img src="{{site.baseurl}}/assets/img/Imagem_SilverCard.png" alt="Membro Silver Card" class="responsive-image mt-50 mb-35">
+            </div>
+        </li>
+
+        <li class="category-box">
+            <div class="content p-20">
+                <h4 class="category-box-title mt-25">
+                    <span class="light">MEMBRO</span>
+                    <span class="bold">GOLD</span>
+                </h4>
+                <p class="category-entry-requirement uppercase letter-spacing-20 mt-20"> 2.000 pontos </p>
+                <p class="category-description mt-25 text-center line-height-15 letter-spacing-6 flex-grow">Sendo Gold, você desbloqueia descontos de até 5% em lojas Duty Free, Dufry Shopping e Hudson, além de todos os benefícios e promoções exclusivas do membro Silver.</p>
+                <a href="#" class="btn btn-wired-red mt-30">Condições</a>
+                <img src="{{site.baseurl}}/assets/img/Imagem_GoldCard.png" alt="Membro Gold Card" class="responsive-image mt-50 mb-35">
+            </div>
+        </li>
+
+        <li class="category-box">
+            <div class="content p-20">
+                <h4 class="category-box-title mt-25">
+                    <span class="light">MEMBRO</span>
+                    <span class="bold">PLATINUM</span>
+                </h4>
+                <p class="category-entry-requirement uppercase letter-spacing-20 mt-20"> 5.000 pontos </p>
+                <p class="category-description mt-25 text-center line-height-15 letter-spacing-6 flex-grow">O membro Platinum obtém até 10% de desconto em lojas Duty Free, Dufry Shopping e Hudson, além de ganhar brindes exclusivos. Também aproveitam também todos benefícios Gold e Silver.</p>
+                <a href="#" class="btn btn-wired-red mt-30">Condições</a>
+                <img src="{{site.baseurl}}/assets/img/Imagem_PlatinumCard.png" alt="Membro Platinum Card" class="responsive-image mt-50 mb-35">
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<div class="wrapper">
+    <h2 class="section-title mt-55 mb-45">Benefícios</h2>
+
+    <div class="owl-carousel beneficios-list">
+        {% for beneficio in site.beneficios %}
+        <div class="beneficios-item" data-beneficio-id="{{beneficio.id}}">
+            {% if beneficio.image != '' %}<img src="{{site.baseurl}}/assets/img/beneficios/{{beneficio.image}}" class="responsive-image" alt="{{beneficio.name}}"> {% endif %}
+
+            
+            <ul class="beneficio-disponivel mt-15">
+                {% for type in beneficio.available_at %}
+                    <li class="{{type}}"></li>
+                {% endfor %}
+            </ul>
+
+
+            <h4 class="beneficio-name letter-spacing-10 text-center mt-15">{{beneficio.name}}</h4>
+
+            <p class="flex-grow beneficio-description line-height-13 letter-spacing-5 uppercase bold text-center mt-15 px-10">{{beneficio.description}}</p>
+            
+            <a href="#" class="btn btn-saiba-mais mt-15">Saiba Mais</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

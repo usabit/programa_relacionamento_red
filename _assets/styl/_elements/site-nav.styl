@@ -1,0 +1,33 @@
+.site-nav-sticky {
+    position: sticky;
+    top: 0;
+    background-color: #f3f3f3;
+}
+
+ul.site-nav {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #211e1b;
+
+    li:not(:last-child):after {
+        content: '|';
+        margin: 0 30px;
+
+        +at('md') { margin: 0 10px; }
+        +below('sm') { content: none; }
+    }
+
+    +below('sm') {
+        flex-direction: column;
+        align-items: center;
+
+        li:not(:last-child) { margin-bottom: 16px; }
+    }
+
+    a {
+        color: inherit;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+}

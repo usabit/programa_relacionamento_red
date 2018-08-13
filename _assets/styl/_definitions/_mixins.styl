@@ -1,0 +1,48 @@
+for name, color in colors {
+    .color-{name} { color: color; }
+}
+
+border-debug(color){
+    if $debug {
+        border: 1px solid color;
+    }
+}
+
+if $debug {
+
+    .media-helper {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        .xs, .sm, .md, .lg, .hd {
+            padding: 8px;
+            background-color: goldenrod;
+            font-weight: 800;
+            color: white;
+        }
+
+        +at('xs') {
+            .xs { display: inline-block; }
+            .sm, .md, .lg, .hd { display: none; }
+        }
+        +at('sm') {
+            .sm { display: inline-block; }
+            .xs, .md, .lg, .hd { display: none; }
+        }
+        +at('md') {
+            .md { display: inline-block; }
+            .xs, .sm, .lg, .hd { display: none; }
+        }
+        +at('lg') {
+            .lg { display: inline-block; }
+            .xs, .sm, .md, .hd { display: none; }
+        }
+        +at('hd') {
+            .hd { display: inline-block; }
+            .xs, .sm, .md, .lg, .xl { display: none; }
+        }
+    }
+} else {
+    .media-helper { display: none; }
+}

@@ -1,0 +1,60 @@
+.beneficios-list {
+    position: relative;
+
+    padding: 0 60px;
+
+    +below('xs') { padding: 0 20px; }
+
+    .owl-nav {
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: space-between;
+        font-size: 50px;
+
+        button {
+            outline: none;
+            span { padding-top: 10px; display: inline-block; }
+        } 
+    }
+
+    .beneficios-item {
+        background-color: white;
+        overflow: hidden;
+        min-height: 340px;
+        display: flex;
+        flex-direction: column;
+
+        > * { flex-shrink: 0; }
+
+        .beneficio-name {
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .beneficio-disponivel {
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 7px;
+            > li {
+                display: block;
+                size(25px);
+                border-radius: 50%;
+
+                margin-left: -7px;
+
+                box-shadow: -1px 1px 1px alpha(black, .2)
+
+                &.silver { background-color: #c3c3c3; }
+                &.gold { background-color: #dccc8a; }
+                &.platinum { background-color: #606ca1; }
+            }
+        }
+    }
+}

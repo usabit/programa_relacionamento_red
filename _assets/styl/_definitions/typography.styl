@@ -1,0 +1,53 @@
+html,
+body {
+    font-family: 'Intro', 'Helvetica Neue', Helvetica, Arial, sans-serif
+    font-size: 14px;
+    font-weight: 400;
+    color: colors['texto'];
+}
+
+lineHeights = 10 11 12 13 14 15 16 17 18 19 20
+for num in lineHeights {
+    .line-height-{num} { line-height: unit(num * 0.1, em); }
+}
+
+letterSpacings = 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+for ls in letterSpacings {
+    .letter-spacing-{ls} { letter-spacing: unit(ls * 0.01, em); }
+}
+
+.light { font-weight: 300; }
+.bold { font-weight: 500; }
+
+strong, .bolder { font-weight: bolder; }
+em, .italic { font-style: italic; }
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+
+.no-wrap { white-space: nowrap; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.2857142857rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1em; }
+
+button,
+input[type=submit],
+a {
+    cursor pointer
+    display inline-block
+    text-decoration none
+    transition all 250ms
+}
+
+.section-title {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
