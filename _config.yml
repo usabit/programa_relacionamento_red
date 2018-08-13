@@ -1,8 +1,7 @@
 # Site settings
 title: Programa de Relacionamento RED
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://lipex.com.br" # the base hostname & protocol for your site
-facebook_username: lipex
+url: "" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
