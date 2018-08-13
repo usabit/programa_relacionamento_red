@@ -1,0 +1,48 @@
+.cliente-mastercard {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    +below('sm') {
+        flex-direction: column;
+        align-items: center;
+
+        > div { margin-bottom: 10px; }
+    }
+}
+
+.cliente-mastercard-para-aproveitar {
+    border-bottom: 3px solid colors['cinza'];
+
+    display: flex;
+    align-items: center;
+
+    > div { 
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        +below('sm') { margin-bottom: 20px; margin-right: 0; }
+    }
+
+    .title {
+        font-size: 22px;
+        color: colors['cinza'];
+    }
+
+    p.text {
+        align-self: stretch;
+        flex-grow: 1;
+        background-color: colors['cinza'];
+        color: white;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        min-height: 50px;
+        +below('sm') { text-align: center; }
+    }
+
+    +below('sm') {
+        flex-direction: column;
+    }
+}

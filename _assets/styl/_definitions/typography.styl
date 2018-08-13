@@ -6,6 +6,11 @@ body {
     color: colors['texto'];
 }
 
+fontSizes = 10 12 14 16 18 20 22 24 26 28 30 32
+for fs in fontSizes {
+    .font-size-{fs} { font-size: unit(fs, px); }
+}
+
 lineHeights = 10 11 12 13 14 15 16 17 18 19 20
 for num in lineHeights {
     .line-height-{num} { line-height: unit(num * 0.1, em); }
@@ -30,6 +35,8 @@ em, .italic { font-style: italic; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 .text-left { text-align: left; }
+
+.arial { font-family: arial; }
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2.2857142857rem; }

@@ -15,6 +15,50 @@ exclude: [
   '.sass-cache'
 ]
 
+novidades: [
+  {
+    title_light: 'DESCONTO EM',
+    title_bold: 'SALAS VIP',
+    text: 'Cliente RED e acompanhante terão desconto em diversas Salas Vips de aeroportos no Brasil.',
+    image: 'novidade-mes-salas.jpg'
+  },
+  {
+    title_light: 'Brindes',
+    title_bold: 'Exclusivos',
+    text: 'Clientes RED tem direito a brindes exclusivos das principais marcas em aeroportos selecionados.',
+    image: 'novidade-mes-brindes.jpg'
+  },
+  {
+    title_light: 'LOCAÇÃO DE',
+    title_bold: 'VEÍCULOS',
+    text: 'Cliente RED tem desconto de até 17% em locações internacionais.',
+    image: 'novidade-mes-veiculos.jpg'
+  }
+]
+
+faq: [
+  {
+    pergunta: 'A quais benefícios eu tenho acesso ao usar o Aplicativo?',
+    resposta: 'Os benefícios estão detalhados no aplicativo. Primeiro selecione o aeroporto para qual ou a partir do qual você vai viajar; dessa forma, você terá acesso a todos os descontos, ofertas e serviços disponíveis.'
+  },
+  {
+    pergunta: 'O download e uso do Aplicativo são gratuitos?',
+    resposta: '___'
+  },
+  {
+    pergunta: 'Como posso obter pontos adicionais?',
+    resposta: '___'
+  },
+  {
+    pergunta: 'Por quanto tempo posso manter meus pontos?',
+    resposta: '___'
+  },
+  {
+    pergunta: 'Quero falar com o centro de atendimento ao cliente. Como posso entrar em contato?',
+    resposta: '___'
+  },
+]
+
 beneficios: [
   {
     id: 1,

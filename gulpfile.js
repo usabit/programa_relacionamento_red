@@ -82,5 +82,5 @@ gulp.task('default', ['sequence'], function() {
         server: "./_site"
     });
 
-    gulp.watch("_site/**/*.html").on('change', browserSync.reload);
+    gulp.watch("**/*.html").on('change', browserSync.reload);
 });

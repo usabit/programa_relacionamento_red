@@ -1,0 +1,29 @@
+.faq {
+    background-color: white;
+
+    .ui-accordion-header {
+        border-bottom: 1px solid alpha(black, .5);
+        padding: 30px 0;
+        position: relative;
+        cursor: pointer;
+
+        .ui-accordion-header-icon {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            size(21px);
+            background-image: url('../img/accordion-chevron.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            cursor: inherit;
+        }
+
+        &.ui-accordion-header-active .ui-accordion-header-icon { transform: translateY(-50%) rotate(180deg); }
+    }
+
+    .ui-accordion-content {
+        padding: 25px 0;
+    }
+}
