@@ -1,0 +1,66 @@
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background-color: alpha(black, .3);
+
+    &.open { 
+        display: flex;
+        z-index: 3;
+    }
+
+    // > *:not(:first-child) { display: none; }
+    > *:not(.active) { display: none; }
+}
+
+div[id^="dialog_"] {
+    width: 600px;
+    max-height: 90vh;
+    overflow: auto;
+    max-width: 90%;
+    background-color: white;
+
+    &.modal-big { width: 830px; }
+    &.modal-small { width: 320px; }
+
+    .close {
+        display: inline-block;
+        size(25px);
+        background-image: url('../img/modal-close.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 25px;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+    h4 {
+        border-bottom: 2px solid alpha(black, .5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+    }
+
+}
+
+.modal-layout {
+    display: flex;
+
+    > * { flex: 1 0 0; }
+    > div + div { margin-left: 40px; }
+    .logo-wrapper { min-height: 70px; }
+
+    +below('sm'){
+        flex-direction: column;
+        > div + div { margin-left: 0px; }
+        > div:first-child { margin-bottom: 40px; }
+        .logo-wrapper { min-height: initial; margin-bottom: 20px; }
+    }
+}

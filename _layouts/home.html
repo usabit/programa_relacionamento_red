@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="wrapper wrapper-fluid">
-    <div class="main-banner" style="background-image: url('{{site.baseurl}}/assets/img/banner-principal.jpg')">
+    <div class="main-banner" style="background-image: url('assets/img/banner-principal.jpg')">
         <div class="content">
             <h2>
                 <strong>Conheça o <br> Red</strong> 
@@ -12,40 +12,125 @@ layout: default
             <p class="line-height-18 mt-20">O programa de Relacionamento Global da Dufry, que oferece aos seus membros benefícios exclusivos dentro de suas lojas e fora
             com parceiros por todo o mundo.</p>
             <div class="main-banner-actions my-40">
-                <a href="#" class="btn btn-wired-white">Baixe o App</a>
+                <a href="#" class="btn btn-wired-white modal-trigger" data-modal-id="download">Baixe o App</a>
                 <span class="mx-16 mt-4 letter-spacing-20">OU</span>
-                <a href="#" class="btn btn-wired-white">cadastre-se Aqui</a>
+                <a href="https://sso.dufry.com/register?country=d2261cb0-6ef7-e611-8100-5065f38bf4f1&lang=pt&_ga=2.55730923.1707106743.1534254545-1705554388.1533753347" target="_blank" class="btn btn-wired-white">cadastre-se Aqui</a>
             </div>
             <div>
-                <a href="#" class="image-link mr-16">
-                    <img src="{{site.baseurl}}/assets/img/disponivel-na-appstore.png">
+                <a href="https://itunes.apple.com/br/app/red-by-dufry/id1108485056?mt=8" target="_blank" class="image-link mr-16">
+                    <img src="assets/img/disponivel-na-appstore.png">
                 </a>
-                <a href="#" class="image-link">
-                    <img src="{{site.baseurl}}/assets/img/disponivel-no-googleplay.png">
+                <a href="https://play.google.com/store/apps/details?id=com.red.by.dufry&hl=pt_BR" target="_blank" class="image-link">
+                    <img src="assets/img/disponivel-no-googleplay.png">
                 </a>
             </div>
         </div>
     </div>
 </div>
 
-<div class="wrapper my-45 site-nav-sticky">
+<div class="wrapper my-45">
     <ul class="site-nav py-10">
-        <li><a href="#">Categorias</a></li>
-        <li><a href="#">Benefícios</a></li>
-        <li><a href="#">Mastercard</a></li>
-        <li><a href="#">Novidades do Mês</a></li>
-        <li><a href="#">Perguntas Frequentes</a></li>
+        <li><a class="scroll-trigger" data-element="categorias" href="#">Categorias</a></li>
+        <li><a class="scroll-trigger" data-element="beneficios" href="#">Benefícios</a></li>
+        <li><a class="scroll-trigger" data-element="mastercard" href="#">Mastercard</a></li>
+        <li><a class="scroll-trigger" data-element="novidades" href="#">Novidades do Mês</a></li>
+        <li><a class="scroll-trigger" data-element="faq" href="#">Perguntas Frequentes</a></li>
     </ul>
 </div>
 
 <div class="wrapper">
-    <a href="#">
-        <img src="{{site.baseurl}}/assets/img/BannerComoFunciona.jpg" class="responsive-image">
+    <a href="https://www.redbydufry.com/pt/pagina-inicial/" target="_blank">
+        <img src="assets/img/BannerComoFunciona.jpg" class="responsive-image">
     </a>
 </div>
 
-<div class="wrapper">
-    <h2 class="section-title mt-55 mb-45">Categorias</h2>
+<div class="wrapper mt-55">
+    <a class="scroll-target" id="categorias"></a>
+    <h2 class="section-title mb-45">Categorias</h2>
+
+    <div class="modal-wrapper">
+
+        <div id="dialog_download" class="modal-small px-25 pb-25 text-center" title="Baixe Agora">
+            <h4 class="py-20 mb-40">
+                <span class="bold uppercase font-size-20 line-height-13 mt-5"> Baixe Agora </span>
+                <div class="close"></div>
+            </h4>
+            <a href="https://itunes.apple.com/br/app/red-by-dufry/id1108485056?mt=8" target="_blank" class="image-link my-5 mx-2">
+                <img src="assets/img/disponivel-na-appstore.png">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.red.by.dufry&hl=pt_BR" target="_blank" class="image-link my-5 mx-2">
+                <img src="assets/img/disponivel-no-googleplay.png">
+            </a>
+        </div>
+
+        <div id="dialog_membrogold" class="modal-big px-25 pb-25" title="Membro Gold">
+            <h4 class="py-20 mb-40">
+                <span class="bold uppercase font-size-20 line-height-13 mt-5">
+                    Condições 
+                    <span style="color: #a79446">GOLD</span>
+                    <span class="color-accent mx-10">|</span>
+                    <span class="color-accent letter-spacing-15">até 5% off</span>
+                </span>
+                <div class="close"></div>
+            </h4>
+            <div class="modal-layout">
+                <div>
+                    <div class="logo-wrapper">
+                        <img src="/assets/img/logo-dutyfree.png" class="responsive-image" alt="Duty Free">
+                    </div>
+                    <p class="line-height-15">- 3% de desconto em compras acima de U$200 nas lojas de embarque e acima de U$250 nas lojas de desembarque.</p>
+                    <p class="line-height-15">- 5% de desconto em compras acima de U$300 nas lojas de embarque e acima de U$400 nas lojas de desembarque.</p>
+                    <p class="mt-20 font-size-10 line-height-15">*Não inclui aparelhos Apple em todas as lojas no Brasil ou relógios de luxo vendidos nas lojas do Aeroporto Internacional de São Paulo</p>
+                </div>
+
+                <div>
+                    <div class="logo-wrapper">
+                        <img src="/assets/img/logo-dufryshopping.png" class="responsive-image" alt="Dufry Shopping">
+                    </div>
+                    <p class="line-height-15">- 3% de desconto em compras acima de R$250</p>
+                    <p class="line-height-15">- 5% de desconto em compras acima de U$500</p>
+                    <div class="logo-wrapper mt-25">
+                        <img src="/assets/img/logo-hudson.png" class="responsive-image" alt="Hudson">
+                    </div>
+                    <p class="line-height-15">- 5% de desconto em compras acima de U$50</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="dialog_membroplatinum" class="modal-big px-25 pb-25" title="Membro Gold">
+            <h4 class="py-20 mb-40">
+                <span class="bold uppercase font-size-20 line-height-13 mt-5">
+                    Condições 
+                    <span style="color: #6271a4">platinum</span>
+                    <span class="color-accent mx-10">|</span>
+                    <span class="color-accent letter-spacing-15">até 10% off</span>
+                </span>
+                <div class="close"></div>
+            </h4>
+            <div class="modal-layout">
+                <div>
+                    <div class="logo-wrapper">
+                        <img src="/assets/img/logo-dutyfree.png" class="responsive-image" alt="Duty Free">
+                    </div>
+                    <p class="line-height-15">- 5% de desconto em compras acima de U$200 nas lojas de embarque e acima de U$250 nas lojas de desembarque.</p>
+                    <p class="line-height-15">- 10% de desconto em compras acima de U$300 nas lojas de embarque e acima de U$400 nas lojas de desembarque.</p>
+                    <p class="mt-20 font-size-10 line-height-15">*Exceção para os aparelhos Apple em todas as lojas no Brasil ou relógios de luxo nas lojas do Aeroporto Internacional de São Paulo que terão desconto máximo de 5%</p>
+                </div>
+
+                <div>
+                    <div class="logo-wrapper">
+                        <img src="/assets/img/logo-dufryshopping.png" class="responsive-image" alt="Dufry Shopping">
+                    </div>
+                    <p class="line-height-15">- 5% de desconto em compras acima de R$250</p>
+                    <p class="line-height-15">- 10% de desconto em compras acima de U$500</p>
+                    <div class="logo-wrapper mt-25">
+                        <img src="/assets/img/logo-hudson.png" class="responsive-image" alt="Hudson">
+                    </div>
+                    <p class="line-height-15">- 10% de desconto em compras acima de U$50</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <ul class="categories-boxes">
         <li class="category-box">
@@ -56,8 +141,8 @@ layout: default
                 </h4>
                 <p class="category-entry-requirement uppercase letter-spacing-20 mt-20"> Cadastro Gratuito </p>
                 <p class="category-description mt-25 text-center line-height-15 letter-spacing-6 flex-grow">Cadastre-se gratuitamente e aproveite uma seleção completa de benefícios exclusivos</p>
-                <a href="#" class="btn btn-wired-red mt-30">Cadastre-se</a>
-                <img src="{{site.baseurl}}/assets/img/Imagem_SilverCard.png" alt="Membro Silver Card" class="responsive-image mt-50 mb-35">
+                <a href="https://sso.dufry.com/register?country=d2261cb0-6ef7-e611-8100-5065f38bf4f1&lang=pt&_ga=2.55730923.1707106743.1534254545-1705554388.1533753347" target="_blank" class="btn btn-wired-red mt-30">Cadastre-se</a>
+                <img src="assets/img/Imagem_SilverCard.png" alt="Membro Silver Card" class="responsive-image mt-50 mb-35">
             </div>
         </li>
 
@@ -69,8 +154,8 @@ layout: default
                 </h4>
                 <p class="category-entry-requirement uppercase letter-spacing-20 mt-20"> 2.000 pontos </p>
                 <p class="category-description mt-25 text-center line-height-15 letter-spacing-6 flex-grow">Sendo Gold, você desbloqueia descontos de até 5% em lojas Duty Free, Dufry Shopping e Hudson, além de todos os benefícios e promoções exclusivas do membro Silver.</p>
-                <a href="#" class="btn btn-wired-red mt-30">Condições</a>
-                <img src="{{site.baseurl}}/assets/img/Imagem_GoldCard.png" alt="Membro Gold Card" class="responsive-image mt-50 mb-35">
+                <a href="#" class="btn btn-wired-red mt-30 modal-trigger" data-modal-id="membrogold">Condições</a>
+                <img src="assets/img/Imagem_GoldCard.png" alt="Membro Gold Card" class="responsive-image mt-50 mb-35">
             </div>
         </li>
 
@@ -82,35 +167,47 @@ layout: default
                 </h4>
                 <p class="category-entry-requirement uppercase letter-spacing-20 mt-20"> 5.000 pontos </p>
                 <p class="category-description mt-25 text-center line-height-15 letter-spacing-6 flex-grow">O membro Platinum obtém até 10% de desconto em lojas Duty Free, Dufry Shopping e Hudson, além de ganhar brindes exclusivos. Também aproveitam também todos benefícios Gold e Silver.</p>
-                <a href="#" class="btn btn-wired-red mt-30">Condições</a>
-                <img src="{{site.baseurl}}/assets/img/Imagem_PlatinumCard.png" alt="Membro Platinum Card" class="responsive-image mt-50 mb-35">
+                <a href="#" class="btn btn-wired-red mt-30 modal-trigger" data-modal-id="membroplatinum">Condições</a>
+                <img src="assets/img/Imagem_PlatinumCard.png" alt="Membro Platinum Card" class="responsive-image mt-50 mb-35">
             </div>
         </li>
 
     </ul>
 </div>
 
-<div class="wrapper">
-    <h2 class="section-title mt-55 mb-45">Benefícios</h2>
+<div class="wrapper mt-55">
+    <a class="scroll-target" id="beneficios"></a>
+    <h2 class="section-title mb-45">Benefícios</h2>
+
+    <div class="modal-wrapper">
+        {% for beneficio in site.beneficios %}
+            <div id="dialog_{{beneficio.id}}" class="px-25 pb-25" title="Descontos {{beneficio.preposition}} {{beneficio.name}}">
+                <h4 class="py-20 mb-25">
+                    <span class="bold uppercase font-size-20 line-height-13 mt-5">Descontos {{beneficio.preposition}} {{beneficio.name}}</span>
+                    <div class="close"></div>
+                </h4>
+                <p class="line-height-13">{{beneficio.text}}</p>
+                <p class="line-height-13 mt-15">{{beneficio.mechanics}}</p>
+                {% if beneficio.call_to_action %}<p class="text-center mt-25"><a href="{{beneficio.call_to_action}}" target="_blank" class="btn btn-raised">Clique Aqui</a></p>{% endif %}
+            </div>
+        {% endfor %}
+    </div>
+
 
     <div class="owl-carousel beneficios-list">
         {% for beneficio in site.beneficios %}
-        <div class="beneficios-item" data-beneficio-id="{{beneficio.id}}">
-            {% if beneficio.image != '' %}<img src="{{site.baseurl}}/assets/img/beneficios/{{beneficio.image}}" class="responsive-image" alt="{{beneficio.name}}"> {% endif %}
+        <div class="beneficios-item">
+            {% if beneficio.image != '' %}<img src="assets/img/beneficios/{{beneficio.image}}" class="responsive-image" alt="{{beneficio.name}}"> {% endif %}
 
-            
             <ul class="beneficio-disponivel mt-15">
                 {% for type in beneficio.available_at %}
                     <li class="{{type}}"></li>
                 {% endfor %}
             </ul>
 
-
             <h4 class="beneficio-name letter-spacing-10 text-center mt-15">{{beneficio.name}}</h4>
-
             <p class="flex-grow beneficio-description line-height-13 letter-spacing-5 uppercase bold text-center mt-15 px-10">{{beneficio.description}}</p>
-            
-            <a href="#" class="btn btn-saiba-mais mt-15">Saiba Mais</a>
+            <a href="#" class="btn btn-saiba-mais mt-15 modal-trigger" data-modal-id="{{beneficio.id}}">Saiba Mais</a>
         </div>
         {% endfor %}
     </div>
@@ -120,58 +217,62 @@ layout: default
         Veja a lista completa de benefícios nacionais e internacionais no aplicativo.
     </p>
 
-    <p class="text-center"> <a href="#" class="btn btn-raised">Baixe Agora</a> </p>
+    <p class="text-center"> <a href="#" class="btn btn-raised modal-trigger" data-modal-id="download">Baixe Agora</a> </p>
     
 </div>
 
-<div class="wrapper my-70">
-    <img src="{{site.baseurl}}/assets/img/MecanicaRed.jpg" class="responsive-image">
+<div class="wrapper my-70 text-center">
+    <img src="assets/img/MecanicaRed.jpg" class="responsive-image desktop-image">
+    <img src="assets/img/MecanicaRed-tablet.jpg" class="responsive-image mobile-image">
 </div>
 
 <div class="wrapper">
+    <a class="scroll-target" id="mastercard"></a>
     <h2 class="uppercase font-size-30 line-height-15 light mb-15">
-        <img src="{{site.baseurl}}/assets/img/double-chevron.png" class="mb-2">
+        <img src="assets/img/double-chevron.png" class="mb-2">
         Cliente <span class="bold color-accent">Mastercard</span> já começa com pontos
     </h2>
 
     <hr class="fade-white mt-0 mb-50">
 
     <div class="cliente-mastercard mb-30">
-        <div class="image-wrap"><img src="{{site.baseurl}}/assets/img/BannerMastercardPlatinum.jpg" class="responsive-image"></div>
-        <div class="image-wrap"><img src="{{site.baseurl}}/assets/img/BannerMastercardBlack.jpg" class="responsive-image"></div>
+        <div class="image-wrap"><img src="assets/img/BannerMastercardPlatinum.jpg" class="responsive-image"></div>
+        <div class="image-wrap"><img src="assets/img/BannerMastercardBlack.jpg" class="responsive-image"></div>
     </div>
 
     <div class="cliente-mastercard-para-aproveitar">
         <div>
-            <img class="responsive-image mr-20" src="{{site.baseurl}}/assets/img/asteristico.png" alt="">
+            <img class="responsive-image mr-20" src="assets/img/asteristico.png" alt="">
             <h3 class="title letter-spacing-10 light uppercase mt-5">para <span class="bold">aproveitar</span></h3>
         </div>
         <p class="text pt-15 pb-12 px-20 line-height-13">Cadastre-se colocando os 6 primeiros dígitos do seu cartão Mastercard no campo “Código Promocional” do cadastro.</p>
     </div>
 </div>
 
-<div class="wrapper my-70">
-    <a href="#">
-        <img src="{{site.baseurl}}/assets/img/BannerParcelamento.jpg" class="responsive-image">
+<div class="wrapper my-70 text-center">
+    <a href="https://dutyfreedufry.com.br/parcelamento-mastercard" target="_blank">
+        <img src="assets/img/BannerParcelamento.jpg" class="responsive-image desktop-image">
+        <img src="assets/img/BannerParcelamento-tablet.jpg" class="responsive-image mobile-image">
     </a>
 </div>
 
 <div class="wrapper my-130">
     <div class="cadastre-se">
-        <img src="{{site.baseurl}}/assets/img/double-chevron-red-right.png">
+        <img src="assets/img/double-chevron-red-right.png">
         <p class="uppercase line-height-13 light mx-20 mt-8">CADASTRE-SE <strong class="bold color-accent">GRATUITAMENTE</strong>, AGORA!</p>
-        <img src="{{site.baseurl}}/assets/img/double-chevron-red-left.png">
+        <img src="assets/img/double-chevron-red-left.png">
     </div>
 
     <div class="cadastre-se-actions my-40">
-        <a href="#" class="btn btn-raised">Baixe o App</a>
+        <a href="#" class="btn btn-raised modal-trigger" data-modal-id="download">Baixe o App</a>
         <span class="mx-16 mt-4 color-accent bold letter-spacing-20">OU</span>
-        <a href="#" class="btn btn-raised">cadastre-se Aqui</a>
+        <a href="https://sso.dufry.com/register?country=d2261cb0-6ef7-e611-8100-5065f38bf4f1&lang=pt&_ga=2.55730923.1707106743.1534254545-1705554388.1533753347" target="_blank" class="btn btn-raised">cadastre-se Aqui</a>
     </div>
 </div>
 
 <div class="wrapper">
-    <h2 class="section-title mt-55 mb-45">Novidades do Mês</h2>
+    <a class="scroll-target" id="novidades"></a>
+    <h2 class="section-title mb-45">Novidades do Mês</h2>
 
     <ul class="categories-boxes">
         {% for novidade in site.novidades %}
@@ -182,10 +283,10 @@ layout: default
                     <span class="bold uppercase">{{novidade.title_bold}}</span>
                 </h4>
                 <p class="category-description mt-25 mb-60 text-center line-height-15 letter-spacing-6 flex-grow">{{novidade.text}}</p>
-                <a href="#" class="btn btn-wired-red mt-30">Veja Mais</a>
+                <a href="https://www.redbydufry.com/pt/novidades/" target="_blank" class="btn btn-wired-red mt-30">Veja Mais</a>
             </div>
             {% if novidade.image %}
-            <div class="image-wrap" style="background-image: url('{{site.baseurl}}/assets/img/novidades/{{novidade.image}}')"></div>
+            <div class="image-wrap" style="background-image: url('assets/img/novidades/{{novidade.image}}')"></div>
             {% endif %}
         </li>
         {% endfor %}
@@ -193,6 +294,7 @@ layout: default
 </div>
 
 <div class="wrapper faq my-80 px-25 pb-30">
+    <a class="scroll-target" id="faq"></a>
     <h2 class="section-title mt-45 mb-10">Perguntas Frequentes</h2>
     <div id="accordion">
         {% for faq in site.faq %}

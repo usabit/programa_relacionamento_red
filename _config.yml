@@ -10,6 +10,7 @@ exclude: [
   'node_modules',
   'gulpfile.js',
   'package.json',
+  'package-lock.json',
   '_sass',
   '.sass-cache'
 ]
@@ -42,19 +43,19 @@ faq: [
   },
   {
     pergunta: 'O download e uso do Aplicativo são gratuitos?',
-    resposta: '___'
+    resposta: 'Sim. Não há custo algum para baixar e usar o Aplicativo.'
   },
   {
     pergunta: 'Como posso obter pontos adicionais?',
-    resposta: '___'
+    resposta: 'Os pontos são acumulados cada vez que você comprar um produto em qualquer loja Dufry localizada em um dos aeroportos onde o programa Red by Dufry está disponível.'
   },
   {
     pergunta: 'Por quanto tempo posso manter meus pontos?',
-    resposta: '___'
+    resposta: 'Seus pontos são válidos pelo prazo de 2 anos, a partir da data do seu registro.'
   },
   {
     pergunta: 'Quero falar com o centro de atendimento ao cliente. Como posso entrar em contato?',
-    resposta: '___'
+    resposta: 'Dentro do Aplicativo, acesse seu perfil e selecione Ajuda e Suporte.'
   },
 ]
 
@@ -62,6 +63,7 @@ beneficios: [
   {
     id: 1,
     name: 'Executive Lounge',
+    preposition: 'no',
     description: '25% de desconto na tarifa de entrada para até 5 membros da sua família',
     text: 'Localizada no Terminal 03 do Aeroporto Internacional de São Paulo, a sala VIP do Executive Lounge oferece acesso à internet, Wi-Fi, televisões, poltronas confortáveis, chuveiros, ofertas de bebidas e seleções de cardápio.',
     mechanics: 'Apresente seu QR code e um documento de identificação na recepção das salas.',
@@ -71,6 +73,7 @@ beneficios: [
   {
     id: 2,
     name: 'Gol Premium',
+    preposition: 'na',
     description: '30% de desconto na tarifa de entrada para membro Red by Dufry e um acompanhante.',
     text: 'Os espaços GOL Premium Lounge Internacional e GOL Premium Lounge Doméstico estão localizados no Aeroporto Internacional de São Paulo, Terminal 02, e no Aeroporto Internacional do Rio de Janeiro, Terminal 02 - 3º andar. Os clientes poderão desfrutar de um menu especial, além de bartenders preparando bebidas especiais, salas de banho e business center com Wi-Fi gratuito.',
     mechanics: 'Apresente seu QR code e um documento de identificação na recepção das salas.',
@@ -80,6 +83,7 @@ beneficios: [
   {
     id: 3,
     name: 'Plaza Premium',
+    preposition: 'no',
     description: '15% de desconto nas tarifas de balcão para um membro Red by Dufry e um acompanhante.',
     text: 'O Plaza Premium Lounge é a maior rede independente de salas vip de aeroportos do mundo. São 3 salas localizadas no embarque Doméstico, Internacional  e no Edifício-Garagem do Terminal 02 do Aeroporto Internacional do Rio de Janeiro. <br> Desconto aplicado por pessoa, por acesso e para uso de 2 horas. A oferta não se aplica aos pacotes Express de 1h de acesso, sempre que ativos nos lounges doméstico e área pública.',
     mechanics: 'Apresente seu QR code e um documento de identificação na recepção das salas.',
@@ -89,6 +93,7 @@ beneficios: [
   {
     id: 4,
     name: 'Brasilia VIP',
+    preposition: 'no',
     description: '25% de desconto nas tarifas de balcão para um membro Red by Dufry e um acompanhante.',
     text: 'Localizada no embarque internacional do Aeroporto de Brasília, a sala VIP oferece serviços exclusivos e atendimento de primeira classe. Inclui cabines privativas, sala de reunião equipada com sistema de videoconferência, duchas privativas, business center, Wi-fi, espaço infantil, home theater, buffet com refeições diversificadas, além de serviço de bar.',
     mechanics: 'Apresente seu QR code e um documento de identificação na recepção das salas.',
@@ -98,6 +103,7 @@ beneficios: [
   {
     id: 5,
     name: 'Recife VIP',
+    preposition: 'no',
     description: '25% de desconto na tarifa de entrada para membro Red by Dufry e mais um acompanhante.',
     text: 'Localizada no Aeroporto Internacional de Recife, a sala VIP foi desenvolvida para atender um público diferenciado. Possui acesso à Internet, Wi-fi, televisões, poltronas confortáveis, além de uma variada oferta de bebidas e cardápio selecionado.',
     mechanics: 'Apresente seu QR code e um documento de identificação na recepção das salas.',
@@ -107,6 +113,7 @@ beneficios: [
   {
     id: 6,
     name: 'Wyndham',
+    preposition: 'no',
     description: '15% de desconto sobre a tarifa total do Wyndham Bonnet Creek Resort.',
     text: 'O Wyndham Bonnet Creek Resort está localizado no coração do Lake Buena Vista, dentro da área da Disney e próximo aos principais parques e atrações de Orlando.<br>Benefício apenas para residentes brasileiros.',
     mechanics: 'Basta clicar no link (http://www.resortemorlando.com/reservas/), entrar com as datas de sua viagem, escolher o tipo de apartamento e clicar em “utilizar voucher ou promoção”. Insira o código redbydufry e clique em “aplicar” e "continuar" para visualizar seu desconto.',
@@ -116,6 +123,7 @@ beneficios: [
   {
     id: 7,
     name: 'Saint Andrews',
+    preposition: 'no',
     description: 'Ganhe benefícios exclusivos durante a sua estadia.',
     text: 'Exclusividade, sofisticação e requinte reunidos em um empreendimento com arquitetura inspirada nos castelos europeus localizado em Gramado. <br>Além da garrafa de espumante rose, o cliente pode escolher mais dois benefícios dentre os 3 a seguir: upgrade no momento do check-in, um passeio com mordomo para o vale dos vinhedos ou degustação de quejos e vinhos. Não é válido em feriados e durante festivais gastronômicos. <br>Benefício mediante a estadia mínima de 2 diárias.',
     mechanics: 'Faça sua reserva através do 0800 644 8088 ou acesse www.saintandrews.com.br. Ao fazer sua reserva no hotel, informe o seu nº RED e usufrua dos benefícios escolhidos.',
@@ -125,6 +133,7 @@ beneficios: [
   {
     id: 8,
     name: 'TRYP',
+    preposition: 'no',
     description: '25% de desconto sob a tarifa balcão.',
     text: 'Aprecie a conveniência e o conforto perfeitos do Hotel Tryp, localizado no Aeroporto Internacional de São Paulo, Terminal 03.<br>Benefícios inclusos sem cobrança extra: café da manhã, wi-fi, acesso a sala de reuniões e jardim à céu aberto para fumantes. Mediante a hospedagem acima de 3h.',
     mechanics: 'Apresente seu QR code e um documento de identificação no Hotel Tryp.',
@@ -134,6 +143,7 @@ beneficios: [
   {
     id: 9,
     name: 'Vinícola Villa Della Torre',
+    preposition: 'na',
     description: 'Até 20% de desconto em serviços.',
     text: 'A Villa Della Torre é uma vinícola localizada em Fumane di Valpolicella, na província de Verona, e cercado por uma paisagem única, onde são produzidos os vinhos mais famosos da Itália e do mundo.<br>Cliente Red by Dufry tem 10% de desconto em qualquer produto Wine Shop, 20% na hospedagem, no restaurante ou no curso de culinária e oferta de 2 vinhos a mais na compra do curso de Degustação Clássica.',
     mechanics: 'Apresente seu QR code e um documento de identificação no Villa Della Torre.',
@@ -143,6 +153,7 @@ beneficios: [
   {
     id: 10,
     name: 'Aerotel',
+    preposition: 'no',
     description: '15% de desconto sob a tarifa balcão.',
     text: 'O aerotel é o novo hotel de trânsito do Aeroporto Internacional do Rio de Janeiro, localizado no terceiro andar do embarque internacional, Píer Sul, Terminal 02. Pode ser usado, exclusivamente, por passageiros que se encontram na área restrita internacional. São 16 suítes confortáveis com wi-fi, relachante ducha, tv, secador de cabelo e outros confortos.',
     mechanics: 'Apresente seu QR code e um documento de identificação na recepção do hotel.',
@@ -152,6 +163,7 @@ beneficios: [
   {
     id: 11,
     name: 'Hertz',
+    preposition: 'na',
     description: 'Até 17% de desconto na locação de veículos.',
     text: 'Hertz é uma das maiores empresas de locação de carros presente em mais de 145 países.<br>Desconto para locação nos EUA, Europa, Canadá, América Latina e Caribe.<br>17% para pagamentos a vista, 15% parcelando em 5x. Benefício exclusivo para residentes brasileiros.',
     mechanics: 'O cliente Red by Dufry pode fazer a cotação e compra online através do link informado.',
@@ -162,16 +174,18 @@ beneficios: [
   {
     id: 12,
     name: 'Porto Seguro',
+    preposition: 'na',
     description: 'Descontos ao contratar seguro de viagem.',
     text: 'Porto Seguro é uma das principais seguradoras do Brasil. <br>Benefício exclusivo para residentes brasileiros.',
     mechanics: 'O cliente Red by Dufry pode fazer a cotação e compra por jchedid@ajccorretora.com.br ou online clicando abaixo.',
     call_to_action: 'https://quote.segurviaje.com.br/?src=09085',
     available_at: ['silver', 'gold', 'platinum'],
-    image: ''
+    image: 'PortoSeguro.jpg'
   },
   {
     id: 13,
     name: 'Millenia 106',
+    preposition: 'no',
     description: '15% de desconto sobre a conta total da mesa.',
     text: 'Millenia 106 é um restaurante em Orlando especializado em gastronomia moderna americana.',
     mechanics: 'Apresente seu QR code e um documento de identificação ao sentar à mesa.',
@@ -181,6 +195,7 @@ beneficios: [
   {
     id: 14,
     name: 'Confeitaria Colombo',
+    preposition: 'na',
     description: '20% de desconto para membro Red by Dufry e três acompanhantes.',
     text: 'Fundada em 1894, a Confeitaria Colombo faz história no Rio de Janeiro. Por mais de um século a Confeitaria Colombo é uma das mais respeitadas confeitarias do país, além de patrimônio cultural e artístico da cidade. Presente em três locações no Rio de Janeiro, inclusive no Aeroporto Internacional.',
     mechanics: 'Apresente seu QR code e um documento de identificação ao sentar à mesa.',
@@ -190,6 +205,7 @@ beneficios: [
   {
     id: 15,
     name: 'Pizzaria Bráz',
+    preposition: 'na',
     description: 'Ganhe uma entrada.',
     text: 'Pizzaria famosa no Brasil com filiais em três cidades: Rio de Janeiro, São Paulo e Campinas. <br>Ganhe um Corniccione sabor Primo ou Bráz como entrada. Benefício limitado a um membro Red by Dufry por mesa.',
     mechanics: 'Apresente seu QR code e um documento de identificação ao sentar à mesa.',
@@ -199,6 +215,7 @@ beneficios: [
   {
     id: 16,
     name: 'Red Lobster',
+    preposition: 'no',
     description: '10% de desconto em todos os pratos quentes para membro Red by Dufry e um acompanhante.',
     text: 'Famoso Restaurante de frutos do mar localizado no Aeroporto Internacional de São Paulo',
     mechanics: 'Apresente seu QR code e um documento de identificação ao sentar à mesa.',
@@ -208,6 +225,7 @@ beneficios: [
   {
     id: 17,
     name: 'Cozinha do Artagão',
+    preposition: 'na',
     description: 'Ganhe uma "surpresa do chef".',
     text: 'Restaurante do aclamado Pedro de de Artagão, eleito chef do ano nas edições do Comer & Beber da Veja de 2014 e 2015, localizado no Rio de Janeiro, no Barra Shopping.',
     mechanics: 'Apresente seu QR code e um documento de identificação ao sentar à mesa.',
@@ -217,6 +235,7 @@ beneficios: [
   {
     id: 18,
     name: 'Churrascaria Barra Grill',
+    preposition: 'na',
     description: '15% de desconto no valor do rodízio para todos na mesa.',
     text: 'Churrascaria famosa localizada na Barra da Tijuca, Rio de Janeiro. <br>Benefício não inclui bebidas e sobremesas, válido para todos os dias da semana.',
     mechanics: 'Apresente seu QR code e um documento de identificação ao sentar à mesa.',
@@ -226,24 +245,27 @@ beneficios: [
   {
     id: 19,
     name: 'Aguzzo',
+    preposition: 'no',
     description: '20% de desconto sobre a conta total da mesa.',
     text: 'Aguzzo nasceu com o propósito de manter a tradição da rica culinária italiana, marcante em São Paulo. <br>Desconto sobre a conta total da mesa, exceto sobre a taxa de serviço. Limite de um membro Red by Dufry por mesa.',
     mechanics: 'Apresente seu QR code e um documento de identificação ao sentar à mesa. Recomendável reservar com antecedência.',
     available_at: ['silver', 'gold', 'platinum'],
-    image: ''
+    image: 'Aguzzo.jpg'
   },
   {
     id: 20,
     name: 'Xian',
+    preposition: 'no',
     description: 'Taça de espumante Xian.',
     text: 'Projetado em anfi-teatro, este ambiente foi idealizado para se integrar totalmente com a natureza à sua frente. Com cardápio comandado pelos chefs Daiske Takao, Fernando Vaz e Dianna Macedo, os sabores da Ásia Moderna compõe um cenário vibrante. Carta de Drinks, Sakês e Vinhos harmonizam a experiência. É necessário pedir pelo menos uma entrada do menu para usufruir do benefício.',
     mechanics: 'Apresente seu QR code e um documento de identificação ao sentar à mesa.',
     available_at: ['platinum'],
-    image: ''
+    image: 'Xian.jpg'
   },
   {
     id: 21,
     name: 'EasySim4u',
+    preposition: 'na',
     description: '15% de desconto na contratação de qualquer plano.',
     text: 'Mais que um chip pré-pago, a EASYSIM4U oferece uma solução completa em telefonia. Cobertura em todos os EUA, Canadá, México e mais 140 países. Chamadas ilimitadas dentro dos EUA e Canadá, internet ilimitada em alta velocidade, sms ilimitados, até chamadas ilimitadas para o Brasil. Além do mais, a EASYSIM4U é autorizada da T-Mobile, a operadora móvel com o 4G mais rápido dos Estados Unidos. Benefício exclusivo para residentes brasileiros.',
     mechanics: 'Basta acessar www.easysim4u.com, escolher seu plano, digitar o código: RED no campo cupom e clicar no botão APPLY.',
@@ -253,6 +275,7 @@ beneficios: [
   {
     id: 22,
     name: 'Estapar',
+    preposition: 'na',
     description: '10% de desconto nos estacionamentos Estapar.',
     text: 'Estacionamentos localizados dentro do Aeroporto Santos Dumont, Rio de Janeiro, e no Gate One Corporate & Offices, São Paulo - em frente ao Aeroporto de Congonhas. Benefício exclusivo para residentes brasileiros.',
     mechanics: 'Informe o número do seu documento cadastrado no RED através do website www.estapar.com.br ou o App da Estapar.',
@@ -262,6 +285,7 @@ beneficios: [
   {
     id: 23,
     name: 'Spazio',
+    preposition: 'no',
     description: '10% de desconto na contratação do serviço.',
     text: 'O Spazio é um charmoso loft de 600 m² na Barra da Tijuca, Rio de Janeiro, muito bem divididos e com a versatilidade para se adaptar a diferentes tamanhos, formatos e tipos de decoração. A casa reduz e amplia espaços e adapta seus ambientes para acomodar perfeitamente de 50 até 550 convidados. <br>Desconto no valor da festa padrão em qualquer dia da semana.',
     mechanics: 'Apresente seu QR code e um documento de identificação no momento da contratação do serviço.',
@@ -271,6 +295,7 @@ beneficios: [
   {
     id: 24,
     name: 'Club Lounge',
+    preposition: 'no',
     description: '10% de desconto na contratação do serviço.',
     text: 'Na Casa de Festas Teen Club Mig Mug e Club Lounge, localizado na Barra da Tijuca podem ser feitas festas infantis, teens e de adultos, inclusive mini weddings e festas de 15 anos. A casa tem capacidade de 50 até 180 convidados. <br>Desconto no valor da festa padrão em qualquer dia da semana.',
     mechanics: 'Apresente seu QR code e um documento de identificação no momento da contratação do serviço.',
@@ -280,10 +305,11 @@ beneficios: [
   {
     id: 25,
     name: 'Hoteis.com',
+    preposition: 'no',
     description: '10% de desconto na reserva.',
     text: 'A Hoteis.com é líder em acomodações on-line. O seu melhor aliado no momento de fazer a reserva perfeita. Seja em um hotel, aluguel para temporada, resort, guesthouse ou apartamento. Com milhares de estabelecimentos em mais de 200 países e territórios, oferecem opções imbatíveis com Garantia de Preços. Simples e fácil de usar, o site conta com um app premiado e ferramentas on-line inovadoras.',
     mechanics: 'Faça sua reserva através do https://www.hoteis.com/redbydufry <br>Ao fazer sua reserva, insira o Código Promocional REDBYDUFRY e ganhe 10% de desconto.',
     available_at: ['silver', 'gold', 'platinum'],
-    image: ''
+    image: 'Hoteis.jpg'
   }
 ]

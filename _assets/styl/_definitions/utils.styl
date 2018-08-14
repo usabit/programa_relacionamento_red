@@ -1,7 +1,17 @@
-.responsive-image{
+.responsive-image {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.desktop-image {
+    +below(768px){ display: none; }
+}
+
+.mobile-image {
+    +above(769px){ display: none; }
+    width: 550px;
+    margin: 0 auto;
 }
 
 .flex-grow {
